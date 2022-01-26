@@ -1,8 +1,8 @@
 <h1 align="center">
-  react-use-cart
+  react-use-cart-encrypted
 </h1>
 <p align="center">
-🛒 A lightweight shopping cart hook for React, Next.js, and Gatsby
+🛒 A lightweight shopping cart hook for React, Next.js, and Gatsby. This cart is a modification of the original module but encrypted with crypto-js
 </p>
 
 <p align="center">
