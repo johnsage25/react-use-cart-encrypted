@@ -1,13 +1,13 @@
 {
-  "name": "react-use-cart",
-  "version": "1.13.0",
-  "description": "React hook library for managing cart state.",
-  "author": "Jamie Barton <jamie@notrab.dev> (https://twitter.com/notrab)",
+  "name": "react-use-cart-encrypted",
+  "version": "1.13.4",
+  "description": "React hook library for managing cart state using crypto-js encryption.",
+  "author": "John Nwanosike <john@pearldrift.com> (https://github.com/pearldrift)",
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "module": "dist/react-use-cart.esm.js",
-  "repository": "notrab/react-use-cart",
+  "module": "dist/react-use-cart-encrypted.esm.js",
+  "repository": "pearldrift/react-use-cart-encrypted",
   "files": [
     "dist",
     "src"

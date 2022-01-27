@@ -6,22 +6,22 @@
 </p>
 
 <p align="center">
-  <a href="https://npmjs.org/package/react-use-cart">
+  <a href="https://npmjs.org/package/react-use-cart-encrypted">
     <img src="https://img.shields.io/npm/v/react-use-cart.svg" alt="Version" />
   </a>
-  <a href="https://npmjs.org/package/react-use-cart">
+  <a href="https://npmjs.org/package/react-use-cart-encrypted">
     <img src="https://img.shields.io/npm/dw/react-use-cart.svg" alt="Downloads/week" />
   </a>
-    <a href="https://github.com/notrab/react-use-cart/blob/main/package.json">
+    <a href="https://github.com/pearldrift/react-use-cart/blob/main/package.json">
     <img src="https://img.shields.io/npm/l/react-use-cart.svg" alt="License" />
   </a>
-  <a href="https://github.com/notrab/react-use-cart/network/members">
-    <img src="https://img.shields.io/github/forks/notrab/react-use-cart" alt="Forks on GitHub" />
+  <a href="https://github.com/pearldrift/react-use-cart-encrypted/network/members">
+    <img src="https://img.shields.io/github/forks/pearldrift/react-use-cart" alt="Forks on GitHub" />
   </a>
-  <a href="https://github.com/notrab/react-use-cart/stargazers">
-    <img src="https://img.shields.io/github/stars/notrab/react-use-cart" alt="Forks on GitHub" />
+  <a href="https://github.com/pearldrift/react-use-cart-encrypted/stargazers">
+    <img src="https://img.shields.io/github/stars/pearldrift/react-use-cart" alt="Forks on GitHub" />
   </a>
-  <img src="https://badgen.net/bundlephobia/minzip/react-use-cart" alt="minified + gzip size" />
+  <img src="https://badgen.net/bundlephobia/minzip/react-use-cart-encrypted" alt="minified + gzip size" />
   <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
   <img src="https://img.shields.io/badge/all_contributors-4-orange.svg" alt="Contributors" />
   <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -46,7 +46,7 @@
 [Demo](https://codesandbox.io/s/react-use-cart-3c7vm)
 
 ```js
-import { CartProvider, useCart } from "react-use-cart";
+import { CartProvider, useCart } from "react-use-cart-encrypted";
 
 function Page() {
   const { addItem } = useCart();
@@ -133,7 +133,7 @@ function App() {
 ## Install
 
 ```bash
-npm install react-use-cart # yarn add react-use-cart
+npm install react-use-cart-encrypted # yarn add react-use-cart-encrypted
 ```
 
 ## `CartProvider`
@@ -147,7 +147,7 @@ Carts are persisted across visits using `localStorage`, unless you specify your 
 ```js
 import React from "react";
 import ReactDOM from "react-dom";
-import { CartProvider } from "react-use-cart";
+import { CartProvider } from "react-use-cart-encrypted";
 
 ReactDOM.render(
   <CartProvider>{/* render app/cart here */}</CartProvider>,
@@ -182,7 +182,7 @@ The `setItems` method should be used to set all items in the cart. This will ove
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { setItems } = useCart();
 
@@ -224,7 +224,7 @@ The `addItem` method should be used to add items to the cart.
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { addItem } = useCart();
 
@@ -254,7 +254,7 @@ The `updateItem` method should be used to update items in the cart.
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { updateItem } = useCart();
 
@@ -275,7 +275,7 @@ The `updateItemQuantity` method should be used to update an items `quantity` val
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { updateItemQuantity } = useCart();
 
@@ -293,7 +293,7 @@ The `removeItem` method should be used to remove an item from the cart.
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { removeItem } = useCart();
 
@@ -307,7 +307,7 @@ The `emptyCart()` method should be used to remove all cart items, and resetting 
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { emptyCart } = useCart();
 
@@ -321,7 +321,7 @@ The `clearCartMetadata()` will reset the `metadata` to an empty object.
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { clearCartMetadata } = useCart();
 
@@ -339,7 +339,7 @@ The `setCartMetadata()` will replace the `metadata` object on the cart. You must
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { setCartMetadata } = useCart();
 
@@ -357,7 +357,7 @@ The `updateCartMetadata()` will update the `metadata` object on the cart. You mu
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { updateCartMetadata } = useCart();
 
@@ -371,7 +371,7 @@ This will return the current cart items in an array.
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { items } = useCart();
 ```
@@ -383,7 +383,7 @@ A quick and easy way to check if the cart is empty. Returned as a boolean.
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { isEmpty } = useCart();
 ```
@@ -399,7 +399,7 @@ Get a specific cart item by `id`. Returns the item object.
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { getItem } = useCart();
 
@@ -417,7 +417,7 @@ Quickly check if an item is in the cart. Returned as a boolean.
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { inCart } = useCart();
 
@@ -431,7 +431,7 @@ This returns the totaly quantity of items in the cart as an integer.
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { totalItems } = useCart();
 ```
@@ -443,7 +443,7 @@ This returns the total unique items in the cart as an integer.
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { totalUniqueItems } = useCart();
 ```
@@ -455,7 +455,7 @@ This returns the total value of all items in the cart.
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { cartTotal } = useCart();
 ```
@@ -467,30 +467,12 @@ This returns the metadata set with `updateCartMetadata`. This is useful for stor
 #### Usage
 
 ```js
-import { useCart } from "react-use-cart";
+import { useCart } from "react-use-cart-encrypted";
 
 const { metadata } = useCart();
 ```
 
-## Contributors ✨
+## Dependencies
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/getTobiasNielsen"><img src="https://avatars.githubusercontent.com/u/54803528?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tobias Nielsen</b></sub></a><br /><a href="https://github.com/notrab/react-use-cart/commits?author=getTobiasNielsen" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/craigtweedy"><img src="https://avatars.githubusercontent.com/u/612558?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Craig Tweedy</b></sub></a><br /><a href="https://github.com/notrab/react-use-cart/commits?author=craigtweedy" title="Code">💻</a></td>
-    <td align="center"><a href="http://jonathan.steele.pro"><img src="https://avatars.githubusercontent.com/u/3578709?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jonathan Steele</b></sub></a><br /><a href="https://github.com/notrab/react-use-cart/commits?author=ynnoj" title="Code">💻</a></td>
-    <td align="center"><a href="https://scottspence.com"><img src="https://avatars.githubusercontent.com/u/234708?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Scott Spence</b></sub></a><br /><a href="#example-spences10" title="Examples">💡</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+crypto-js,
+secure-ls

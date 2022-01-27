@@ -174,6 +174,7 @@ export const CartProvider: React.FC<{
   onItemAdd?: (payload: Item) => void;
   onItemUpdate?: (payload: object) => void;
   onItemRemove?: (id: Item["id"]) => void;
+  encryptionSecret?: string;
   storage?: (
     key: string,
     initialValue: string
@@ -182,6 +183,7 @@ export const CartProvider: React.FC<{
 }> = ({
   children,
   id: cartId,
+  encryptionSecret,
   defaultItems = [],
   onSetItems,
   onItemAdd,
@@ -193,7 +195,8 @@ export const CartProvider: React.FC<{
   const id = cartId ? cartId : createCartIdentifier();
 
   const [savedCart, saveCart] = storage(
-    cartId ? `react-use-cart-${id}` : `react-use-cart`,
+    cartId ? `react-use-cart-${id}` : `react-use-cart-encrypted`,
+
     JSON.stringify({
       id,
       ...initialState,
@@ -337,6 +340,7 @@ export const CartProvider: React.FC<{
         updateItemQuantity,
         removeItem,
         emptyCart,
+        encryptionSecret,
         clearCartMetadata,
         setCartMetadata,
         updateCartMetadata,

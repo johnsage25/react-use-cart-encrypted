@@ -8,7 +8,7 @@ export default function useLocalStorage(
   const [storedValue, setStoredValue] = React.useState(() => {
     try {
 
-      var ls = new SecureLS();
+      var ls = new SecureLS({encodingType: 'aes', encryptionSecret: 'pJs(?&4Zyp6dbA`(Qh&s&8]s94C<Lx<H#&Vk5#cn3ttfexeHHv6W#/LW(3v4r8UkE!Cy92]Kf'});
 
       const item =
         typeof ls !== "undefined" && ls.get(key);
@@ -22,7 +22,7 @@ export default function useLocalStorage(
   const setValue = (value: Function | string) => {
     try {
 
-      var ls = new SecureLS();
+      var ls = new SecureLS({encodingType: 'aes', encryptionSecret: 'pJs(?&4Zyp6dbA`(Qh&s&8]s94C<Lx<H#&Vk5#cn3ttfexeHHv6W#/LW(3v4r8UkE!Cy92]Kf'});
 
       const valueToStore =
         value instanceof Function ? value(storedValue) : value;
